@@ -14,8 +14,4 @@ To support further research on prompt–image relationships and multimodal repre
 
 ## Overview
 
-This dataset is constructed from a large-scale collection of prompt–image pairs gathered from publicly accessible Midjourney Discord channels. From this collection, we release a processed subset of approximately 4.5 million samples. Each sample corresponds to a user-submitted prompt and its associated generated image, reflecting real-world usage of text-to-image systems.
-
-The released dataset includes anonymized prompts and corresponding image embeddings derived from the generated images. The data has been preprocessed to remove user-identifying information and to ensure consistency, including filtering prompts based on length and content.
-
-The dataset spans multiple Midjourney model versions and reflects a wide range of prompt styles, modifiers, and generation behaviors observed in practice.
+This dataset is constructed from a large-scale collection of prompt–image pairs gathered from publicly accessible Midjourney Discord channels. From this collection, we release a processed subset of approximately 4.5 million samples. Each sample corresponds to a user-submitted prompt and its associated generated image, reflecting real-world usage of text-to-image systems. The released dataset includes anonymized prompts and corresponding image embeddings derived from the generated images. The data has been preprocessed to remove user-identifying information and to ensure consistency, including filtering prompts based on length and content. The dataset spans multiple Midjourney model versions and reflects a wide range of prompt styles, modifiers, and generation behaviors observed in practice.
