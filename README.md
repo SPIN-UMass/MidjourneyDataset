@@ -36,6 +36,12 @@ The dataset is constructed from prompt–image pairs collected from publicly acc
 
 We collect data from multiple general-purpose channels to capture a broad range of prompts and generation behaviors. The original dataset consists of tens of millions of samples, from which we derive a processed subset for release. All samples are preprocessed to extract the original prompts, remove user-identifying information, and filter out invalid or noisy entries to ensure data quality and consistency.
 
+## Data Preprocessing
+
+The collected data is processed to produce clean and consistent prompt–image pairs suitable for analysis and release. We first extract the original user prompts from raw message content, which may include additional fields such as user identifiers, timestamps, image URLs, and generation parameters. We then remove empty entries and rows with missing or malformed data, and exclude prompts that contain external image URLs to avoid dependency on external content. To improve data quality and consistency, we filter out prompts containing non-English text or excessive noise (e.g., emojis).
+
+We further retain only prompts with tokenized length ≤ 77, as many text encoders used in multimodal models (e.g., CLIP) operate under fixed context length constraints, and longer prompts would otherwise be truncated. The Midjourney model version associated with each sample is inferred using timestamps and known release periods of different versions. Finally, all user-identifying and platform-specific metadata, including user IDs, timestamps, and image URLs, are removed to ensure anonymization in the released dataset. The preprocessing scripts used to perform these steps are included in this repository.
+
 
 ## Citation
 
