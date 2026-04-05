@@ -29,3 +29,10 @@ Each sample in the dataset includes the following fields:
 
 Image embeddings are computed using the CLIP model (`laion/CLIP-ViT-g-14-laion2B-s12B-b42K`) and stored separately in chunked files (each containing up to 200,000 embeddings).
 
+
+## Data Collection
+
+The dataset is constructed from prompt–image pairs collected from publicly accessible Midjourney Discord channels, where users interact with the Midjourney bot to generate images. Each prompt submitted by a user is posted alongside the corresponding generated images, enabling the collection of large-scale prompt–image data from real-world usage.
+
+We collect data from multiple general-purpose channels to capture a broad range of prompts and generation behaviors. The original dataset consists of tens of millions of samples, from which we derive a processed subset for release. All samples are preprocessed to extract the original prompts, remove user-identifying information, and filter out invalid or noisy entries to ensure data quality and consistency.
+
