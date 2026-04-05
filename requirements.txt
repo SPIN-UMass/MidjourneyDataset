@@ -1,0 +1,6 @@
+pandas
+numpy
+pyarrow
+transformers
+tqdm
+fasttext
