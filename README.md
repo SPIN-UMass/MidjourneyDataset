@@ -36,3 +36,17 @@ The dataset is constructed from prompt–image pairs collected from publicly acc
 
 We collect data from multiple general-purpose channels to capture a broad range of prompts and generation behaviors. The original dataset consists of tens of millions of samples, from which we derive a processed subset for release. All samples are preprocessed to extract the original prompts, remove user-identifying information, and filter out invalid or noisy entries to ensure data quality and consistency.
 
+
+## Citation
+
+If you use this dataset, please cite our paper:
+
+```bibtex
+@inproceedings{
+naseh2024iteratively,
+title={Iteratively Prompting Multimodal {LLM}s to Reproduce Natural and {AI}-Generated Images},
+author={Ali Naseh and Katherine Thai and Mohit Iyyer and Amir Houmansadr},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=SwUsFTtM9h}
+}
