@@ -42,6 +42,16 @@ The collected data is processed to produce clean and consistent prompt–image p
 
 We further retain only prompts with tokenized length ≤ 77, as many text encoders used in multimodal models (e.g., CLIP) operate under fixed context length constraints, and longer prompts would otherwise be truncated. The Midjourney model version associated with each sample is inferred using timestamps and known release periods of different versions. Finally, all user-identifying and platform-specific metadata, including user IDs, timestamps, and image URLs, are removed to ensure anonymization in the released dataset. The preprocessing scripts used to perform these steps are included in this repository.
 
+## Data Access
+
+The dataset and embedding files are hosted on Hugging Face:
+
+👉 [Midjourney Prompt–Embedding Dataset](https://huggingface.co/datasets/AliN96/midjourney-prompts-embeddings)
+
+- The main dataset is provided as a Parquet file (`train.parquet`).
+- Image embeddings are stored separately as shard files (`.npy`).
+
+Please refer to the Hugging Face page for instructions on downloading and using the dataset.
 
 ## Citation
 
